@@ -27,3 +27,10 @@ Benchmark Scores: Benchmark scores represent standardized performance evaluation
 Mixture of Experts (MoE): The Mixture of Experts (MoE) is an architectural approach designed to improve efficiency in large models. Instead of activating all parts of the model simultaneously, MoE structures contain multiple specialized “experts,” with only a subset being used for each input. This allows models to scale to very large sizes while maintaining lower computational costs during inference, balancing performance and efficiency.
 
 Fine-tuning: Fine-tuning is the process of adapting a pre-trained language model to specific tasks or domains by continuing its training on targeted datasets. This technique allows models to specialize beyond their general training, improving relevance and accuracy in specific tasks.
+
+# Data Preparation
+
+The dataset is from the HuggingFace Leaderboard Dataset
+Retrieved through:
+from datasets import load_dataset
+dataset = load_dataset("open-llm-leaderboard/contents", split="train")
