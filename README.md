@@ -8,13 +8,13 @@ This project aims to explore the HuggingFace leaderboard dataset, targeting the 
 
 ## Table of Contents
 
-[Key Concepts and Terminology](##key-concepts-and-terminilogy)
+[Key Concepts and Terminology](#key-concepts-and-terminilogy)
 
 [Data Preparation](#data-preparation)
 
-Insights/Graphs
+[Insights/Graphs](#insights/graphs)
 
-Conclusion
+[Conclusion](conclusion)
 
 ## Key Concepts and Terminology
 
@@ -31,11 +31,81 @@ This section will explain the keywords that will be used in this project.
 ## Data Preparation
 
 The dataset is from the HuggingFace Leaderboard Dataset
-Retrieved through:
+
+Data and Library imports:
+
 ```
 from datasets import load_dataset
+import pandas as pd
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+import numpy as np
+import altair as alt
+
 dataset = load_dataset("open-llm-leaderboard/contents", split="train")
 ```
+
+Set the DataFrame through Pandas, drop any unnecessary columns, set date format, and rename any complicating columns.
+
+```
+# Convert to pandas
+df = pd.DataFrame(dataset)
+
+# Set display column to get the overview and set the submission date to date format
+pd.set_option('display.max_columns', None)
+df['Submission Date'] = pd.to_datetime(df['Submission Date'])
+
+#Remove trivial columns
+df = df.drop(columns=['T', 'Weight type', 'Model sha', 'Hub License', 'Chat Template', 'Generation', 'Precision', 'Model', 'Available on the hub', 'Merged'])
+
+#Remove individual scores as specializations of models are not the main focus of the project
+df = df.drop(columns=['IFEval Raw','IFEval','BBH Raw', 'MATH Lvl 5 Raw', 'MATH Lvl 5', 'GPQA Raw', 'GPQA', 'MUSR Raw', 'MUSR', 'BBH', 'MMLU-PRO Raw', 'MMLU-PRO'])
+df
+
+#Rename for easier inputs
+df = df.rename(columns={"Average ⬆️": "Average"})
+df = df.rename(columns={"CO₂ cost (kg)": "CO2 Cost (kg)"})
+df = df.rename(columns={"Hub ❤️": "Ratings"})
+
+#Normalize Data
+
+str_cols = ['fullname', 'eval_name', 'Type', 'Architecture', 'Base Model']
+for col in str_cols:
+    df[col] = df[col].str.strip().str.lower()
+
+df['#Params (B)'] = df['#Params (B)'].round(3)
+df['CO2 Cost (kg)'] = df['CO2 Cost (kg)'].round(2)
+```
+
+Remove Duplicates and Check for any errors such as models having 0.0 as their parameters.
+
+```
+df.drop_duplicates(subset=['fullname', '#Params (B)', 'Type'], keep='first', inplace=True)
+
+#Check models where parameters = 0
+df.loc[(df['#Params (B)'] == 0)]
+
+#For Parameters, add parameters number according model name.
+df.loc[341, '#Params (B)'] = 8.0
+df.loc[944, '#Params (B)'] = 14.0
+df.loc[2123, '#Params (B)'] = 7.0
+df.loc[2936, '#Params (B)'] = 7.0
+
+#Drop MoE model without parameters
+df = df[df['#Params (B)'] > 0.0]
+
+#Reset index
+df = df.reset_index(drop=True)
+```
+
+
+
+
+
+
+
+
+
 
 
 
