@@ -173,7 +173,9 @@ Unfortunately, some of the Parameters for MoE models contains the overall parame
 
 
 <img width="1130" height="640" alt="image" src="https://github.com/user-attachments/assets/03fad89a-baa0-47fe-a086-d74c22c56880" />
+
  Figure 9. MoE vs Dense CO2 Efficiency 
+
 
 From Figure 9, in terms of CO2 Efficiency, the MoE models are on par with fine-tuned models
 
