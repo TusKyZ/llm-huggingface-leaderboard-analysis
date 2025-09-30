@@ -100,7 +100,7 @@ df = df.reset_index(drop=True)
 
 ## Workflows and Insights
 
-In this section, the author's workflow and analysis will be inspected. Upon initial inspection, there are many useful and interesting columns such as: <ins>Parameters</ins>, <ins>Average</ins> (Benchmark Scores), <ins>Ratings</ins>(from the HuggingFace Hub), <ins>Submission Date</ins>, <ins>Official Provider</ins>, and the <ins>CO2 Cost</ins>.
+In this section, the author's workflow and analysis will be explored. Upon initial inspection, there are many useful and interesting columns such as: <ins>Parameters</ins>, <ins>Average</ins> (Benchmark Scores), <ins>Ratings</ins>(from the HuggingFace Hub), <ins>Submission Date</ins>, <ins>Official Provider</ins>, and the <ins>CO2 Cost</ins>.
 
 For easier analysis, the author have categorized parameters into 3 main categories as follows: Small (0-9 Billion Parameters Models), Medium (9-40 Billion Parameters Models), and Large (>40 Billion Parameters Models)
 
@@ -110,6 +110,18 @@ labels = ['Small', 'Medium', 'Large']
 
 df['Model Size'] = pd.cut(df['#Params (B)'], bins=bins, labels=labels, right=True, include_lowest=True)
 ```
+
+Then, the author explore through visualizations the data to find trends, starting from the basic Average Performance (Benchmark Score) per Parameters
+
+<img width="438" height="488" alt="image" src="https://github.com/user-attachments/assets/3c8aaacc-af96-4c28-9a42-990d5a377aa6" />
+
+Figure 1. Average Performance (Benchmark Score) per Parameters
+
+shows there is a major difference in 
+
+
+
+
 
 
 
