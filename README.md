@@ -45,7 +45,7 @@ import altair as alt
 dataset = load_dataset("open-llm-leaderboard/contents", split="train")
 ```
 
-Set the DataFrame through Pandas, drop any unnecessary columns, set date format, and rename any complicating columns.
+Set the DataFrame through Pandas, drop any unnecessary columns, set date format, and rename any complicating columns name.
 
 ```
 # Convert to pandas
@@ -113,12 +113,37 @@ df['Model Size'] = pd.cut(df['#Params (B)'], bins=bins, labels=labels, right=Tru
 
 Then, the author explore through visualizations the data to find trends, starting from the basic Average Performance (Benchmark Score) per Parameters
 
-<img width="438" height="488" alt="image" src="https://github.com/user-attachments/assets/3c8aaacc-af96-4c28-9a42-990d5a377aa6" />
+<img width="438" height="487" alt="image" src="https://github.com/user-attachments/assets/6f5494a4-3909-49c9-ac0d-ca1257faea7c" />
 
-Figure 1. Average Performance (Benchmark Score) per Parameters
 
-shows there is a major difference in 
+ Figure 1. Average Performance (Benchmark Score) per Parameters
 
+In Figure 1, to reduce smaller models distorting the ratio, models that is smaller than <1 billion Parameters have been cut off to make small model section more accurate.
+
+This shows the diminishing return of the more parameters, the less benchmark score will be gained per parameters as more parameters are added to the model, which is as expected.
+
+<br>
+<br>
+<br>
+
+Now, in the HuggingFace dataset, there is various fine-tuned models (Official Provider = "False"), and most of the fine-tuning results in better performance scores and better CO2 cost efficiency as follows.
+
+<img width="580" height="608" alt="image" src="https://github.com/user-attachments/assets/9d480170-db00-4a59-b5a1-cba004c35a74" />
+
+<img width="573" height="452" alt="image" src="https://github.com/user-attachments/assets/baf64c53-9bfb-4897-b314-c9d1af1cf58c" />
+
+ Figure 2. CO2 Cost Performance Scatterplot with Trendline
+
+Figure 2 shows how the fine-tuned models from the community outperforms the Official Released models but is it because the community prefer to use only smaller, more efficient models?
+The author also took the ratio of each group in proportion to the "large" group model. Figure 3 and 4 will show each for Unofficial models vs Official models.
+
+<img width="649" height="541" alt="image" src="https://github.com/user-attachments/assets/da43d80b-2bd2-4afa-8f83-7bf640b72d4f" />
+
+ Figure 3. Unofficial Models Count Ratio
+
+<img width="649" height="541" alt="image" src="https://github.com/user-attachments/assets/afa1a26d-1e66-4095-9d76-b95f811686fb" />
+
+ Figure 4. Official Models Count Ratio
 
 
 
