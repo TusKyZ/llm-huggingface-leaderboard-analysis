@@ -164,13 +164,12 @@ Figure 4 and 5 shows there is a unequality in the ratio of data between Official
 
 For further accuracy, narrowing down to only one main provider (Qwen), we can still see the same trend where of unofficial models outperforming the official, which can then be concluded that fine-tuned models will provide more efficiency in terms of CO2 cost, Parameters, and Benchmark Scores.
 
-After inspecting the Official Providers Models and comparing it to community fine-tuned models, the dataset also have Mixture of Experts column which we have not used.
-Unfortunately, the Parameters for MoE models contains the overall parameters, instead of the active parameters when in-used, which derives the numerical advantage of the MoE models as shown in Figure 8.
-
 <img width="1292" height="369" alt="image" src="https://github.com/user-attachments/assets/469b05cb-023a-41f6-a975-6b65f325e4c7" />
 
  Figure 8.
 
+After inspecting the Official Providers Models and comparing it to community fine-tuned models, the dataset also have Mixture of Experts column which we have not used.
+Unfortunately, some of the Parameters for MoE models contains the overall parameters, instead of the active parameters when in-used, which derives the numerical advantage of the MoE models as shown in Figure 8.
 
 
 <img width="1130" height="640" alt="image" src="https://github.com/user-attachments/assets/03fad89a-baa0-47fe-a086-d74c22c56880" />
@@ -181,7 +180,14 @@ From Figure 9, in terms of CO2 Efficiency, the MoE models are on par with fine-t
 
 ## Conclusion
 
-In conclusion, the increase in benchmark scores diminishes as the number of parameters went up.
+In conclusion.
+
+1. The increase in benchmark scores diminishes as the number of parameters went up.
+
+2. The fine-tuned models consistently outperforms pretrained official models in terms of CO2 efficiency, benchmark scores and parameters efficiency.
+In the future, if rules and regulations regarding Large Language Model power consumption became a problem, fine-tuning can reduce and optimize CO2 cost while maintaining or even increasing capabilities.
+
+3. MoE parameters in the datasets are inconsistent between active parameters and overall parameters. CO2 efficiency is comparable to fine-tuned models.
 
 
 ## Additional Info
