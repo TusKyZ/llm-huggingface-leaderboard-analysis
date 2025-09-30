@@ -100,7 +100,8 @@ df = df.reset_index(drop=True)
 
 ## Workflows and Insights
 
-In this section, the author's workflow and analysis will be inspected. Upon initial inspection, there are many useful and interesting columns such as: Parameters, Average (Benchmark Scores), Ratings(from the HuggingFace Hub), Submission Date, Official Provider, and the CO2 Cost.
+In this section, the author's workflow and analysis will be inspected. Upon initial inspection, there are many useful and interesting columns such as: <ins>Parameters</ins>, <ins>Average</ins> (Benchmark Scores), <ins>Ratings</ins>(from the HuggingFace Hub), <ins>Submission Date</ins>, <ins>Official Provider</ins>, and the <ins>CO2 Cost</ins>.
+
 For easier analysis, the author have categorized parameters into 3 main categories as follows: Small (0-9 Billion Parameters Models), Medium (9-40 Billion Parameters Models), and Large (>40 Billion Parameters Models)
 
 ```
