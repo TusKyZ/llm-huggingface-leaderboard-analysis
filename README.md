@@ -115,6 +115,12 @@ df['Model Size'] = pd.cut(df['#Params (B)'], bins=bins, labels=labels, right=Tru
 
 
 
+## Additional Info
+Hugging Face Leaderboard: Link https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/
+CO2 Cost Calculation (HuggingFace): Link https://huggingface.co/docs/leaderboards/open_llm_leaderboard/emissions
+
+
+
 
 
 
