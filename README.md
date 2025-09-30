@@ -100,7 +100,7 @@ df = df.reset_index(drop=True)
 
 ## Workflows and Insights
 
-In this section, the author's workflow and analysis will be explored. Upon initial inspection, there are many useful and interesting columns such as: <ins>Parameters</ins>, <ins>Average</ins> (Benchmark Scores), <ins>Ratings</ins>(from the HuggingFace Hub), <ins>Submission Date</ins>, <ins>Official Provider</ins>, and the <ins>CO2 Cost</ins>.
+In this section, the author's workflow and analysis will be explored. Upon initial inspection, there are many useful and interesting columns such as: <ins>Parameters</ins>, <ins>Average</ins> (Benchmark Scores), <ins>Ratings</ins> (from the HuggingFace Hub), <ins>Submission Date</ins>, <ins>Official Provider</ins>, and the <ins>CO2 Cost</ins>.
 
 For easier analysis, the author have categorized parameters into 3 main categories as follows: Small (0-9 Billion Parameters Models), Medium (9-40 Billion Parameters Models), and Large (>40 Billion Parameters Models)
 
@@ -135,7 +135,9 @@ Now, in the HuggingFace dataset, there is various fine-tuned models (Official Pr
  Figure 2. CO2 Cost Performance Scatterplot with Trendline
 
 Figure 2 shows how the fine-tuned models from the community outperforms the Official Released models but is it because the community prefer to use only smaller, more efficient models?
-The author also took the ratio of each group in proportion to the "large" group model. Figure 3 and 4 will show each for Unofficial models vs Official models.
+The author also took the ratio of each group in proportion to the "large" group model.
+
+Figure 3 and 4 will show each for Unofficial models vs Official models.
 
 <img width="649" height="541" alt="image" src="https://github.com/user-attachments/assets/da43d80b-2bd2-4afa-8f83-7bf640b72d4f" />
 
@@ -144,6 +146,8 @@ The author also took the ratio of each group in proportion to the "large" group 
 <img width="649" height="541" alt="image" src="https://github.com/user-attachments/assets/afa1a26d-1e66-4095-9d76-b95f811686fb" />
 
  Figure 4. Official Models Count Ratio
+
+Figure 3 and 4 shows there is a unequality in the ratio of data between Official and Unofficial models, and the unofficial models are skewed toward the smaller, more efficient models.
 
 
 
