@@ -8,7 +8,7 @@ This project aims to explore the HuggingFace leaderboard dataset, targeting the 
 
 ## Table of Contents
 
-[Key Concepts and Terminology](#key-concepts-and-terminilogy)
+[Key Concepts and Terminology](#key-concepts-and-terminology)
 
 [Data Preparation](#data-preparation)
 
