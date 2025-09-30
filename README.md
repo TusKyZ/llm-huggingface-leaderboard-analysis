@@ -157,6 +157,12 @@ Figure 4 and 5 shows there is a unequality in the ratio of data between Official
 
  Figure 6. Performance of Unofficial and Official Models by Model Size
 
+
+<img width="1067" height="643" alt="image" src="https://github.com/user-attachments/assets/3ca249ba-8d10-41bc-8416-80366dc70b3c" />
+
+ Figure 7. Qwen Model Performance (Unofficial vs Official)
+
+
 After inspecting the Official Providers Models and comparing it to community fine-tuned models, the dataset also have Mixture of Experts column which we have not used.
 
 
