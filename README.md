@@ -165,8 +165,16 @@ Figure 4 and 5 shows there is a unequality in the ratio of data between Official
 For further accuracy, narrowing down to only one main provider (Qwen), we can still see the same trend where of unofficial models outperforming the official, which can then be concluded that fine-tuned models will provide more efficiency in terms of CO2 cost, Parameters, and Benchmark Scores.
 
 After inspecting the Official Providers Models and comparing it to community fine-tuned models, the dataset also have Mixture of Experts column which we have not used.
+Unfortunately, the Parameters for MoE models contains the overall parameters, instead of the active parameters when in-used, which derives the numerical advantage of the MoE models as shown in Figure 8.
+
+<img width="1292" height="369" alt="image" src="https://github.com/user-attachments/assets/469b05cb-023a-41f6-a975-6b65f325e4c7" />
+
+ Figure 8.
 
 
+
+<img width="1130" height="640" alt="image" src="https://github.com/user-attachments/assets/03fad89a-baa0-47fe-a086-d74c22c56880" />
+ Figure 9. MoE vs Dense CO2 Efficiency 
 
 
 
