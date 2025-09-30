@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Large Language Model, like ChatGPT, Claude, Deepseek, and many others have been popular and an increasing trend since 2022, they will continue to be a part of our everyday's life and it is crucial to know how they work and the keywords associated with them. Their core keywords like the parameters, benchmark scores, models fine-tuning, and techniques like Mixture of Experts (MoE), which is used for efficiency and how its important will be explored on as well.
+Large Language Model, like ChatGPT, Claude, Deepseek, and many others have been popular and an increasing trend since 2022, they will continue to be a part of this generation's everyday's life and it is crucial to know how they work and the keywords associated with them. Their core keywords like the parameters, benchmark scores, models fine-tuning, and techniques like Mixture of Experts (MoE), which is used for efficiency and how its important will be explored on as well.
 
 This project aims to explore the HuggingFace leaderboard dataset, targeting the parameters, the average benchmark scores of MoE models vs non-MoE models, and the CO2 costs of the models and visualizing them to find insights.
 
@@ -12,7 +12,7 @@ This project aims to explore the HuggingFace leaderboard dataset, targeting the 
 
 [Data Preparation](#data-preparation)
 
-[Insights/Graphs](#insights/graphs)
+[Workflows and Insights](#workflows-and-insights)
 
 [Conclusion](conclusion)
 
@@ -98,6 +98,17 @@ df = df[df['#Params (B)'] > 0.0]
 df = df.reset_index(drop=True)
 ```
 
+## Workflows and Insights
+
+In this section, the author's workflow and analysis will be inspected. Upon initial inspection, there are many useful and interesting columns such as: Parameters, Average (Benchmark Scores), Ratings(from the HuggingFace Hub), Submission Date, Official Provider, and the CO2 Cost.
+For easier analysis, the author have categorized parameters into 3 main categories as follows: Small (0-9 Billion Parameters Models), Medium (9-40 Billion Parameters Models), and Large (>40 Billion Parameters Models)
+
+```
+bins = [0, 9, 40, float('inf')]
+labels = ['Small', 'Medium', 'Large']
+
+df['Model Size'] = pd.cut(df['#Params (B)'], bins=bins, labels=labels, right=True, include_lowest=True)
+```
 
 
 
