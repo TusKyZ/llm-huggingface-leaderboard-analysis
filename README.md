@@ -137,8 +137,6 @@ Now, in the HuggingFace dataset, there is various fine-tuned models (Official Pr
 Figure 2 shows how the fine-tuned models from the community outperforms the Official Released models but is it because the community prefer to use only smaller, more efficient models?
 The author also took the ratio of each group in proportion to the "large" group model.
 
-Figure 3 and 4 will show each for Unofficial models vs Official models.
-
 <img width="649" height="541" alt="image" src="https://github.com/user-attachments/assets/da43d80b-2bd2-4afa-8f83-7bf640b72d4f" />
 
  Figure 3. Unofficial Models Count Ratio
@@ -147,7 +145,13 @@ Figure 3 and 4 will show each for Unofficial models vs Official models.
 
  Figure 4. Official Models Count Ratio
 
-Figure 3 and 4 shows there is a unequality in the ratio of data between Official and Unofficial models, and the unofficial models are skewed toward the smaller, more efficient models.
+Figure 3 and 4 shows there is a unequality in the ratio of data between Official and Unofficial models, and the unofficial models are skewed toward the smaller, more efficient models. To make it more accurate, normalize by Parameters to make the comparison more accurate as will be seen in Figure 5.
+
+<img width="497" height="486" alt="image" src="https://github.com/user-attachments/assets/a606c400-f15e-40f3-8b19-ccd3a89acda3" />
+
+ Figure 5. Performance of Unofficial and Official Models by Model Size
+
+
 
 
 
