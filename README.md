@@ -181,6 +181,9 @@ From Figure 9, in terms of CO2 Efficiency, the MoE models are on par with fine-t
 
 ## Conclusion
 
+In conclusion, the increase in benchmark scores diminishes as the number of parameters went up.
+
+
 ## Additional Info
 Hugging Face Leaderboard: Link https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/
 CO2 Cost Calculation (HuggingFace): Link https://huggingface.co/docs/leaderboards/open_llm_leaderboard/emissions
