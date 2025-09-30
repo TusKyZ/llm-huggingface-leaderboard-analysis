@@ -176,7 +176,7 @@ Unfortunately, the Parameters for MoE models contains the overall parameters, in
 <img width="1130" height="640" alt="image" src="https://github.com/user-attachments/assets/03fad89a-baa0-47fe-a086-d74c22c56880" />
  Figure 9. MoE vs Dense CO2 Efficiency 
 
-
+From Figure 9, in terms of CO2 Efficiency, the MoE models are on par with fine-tuned models
 
 
 ## Conclusion
@@ -184,8 +184,6 @@ Unfortunately, the Parameters for MoE models contains the overall parameters, in
 ## Additional Info
 Hugging Face Leaderboard: Link https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/
 CO2 Cost Calculation (HuggingFace): Link https://huggingface.co/docs/leaderboards/open_llm_leaderboard/emissions
-
-
 
 
 
