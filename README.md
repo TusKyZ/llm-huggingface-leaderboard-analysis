@@ -157,27 +157,34 @@ Figure 4 and 5 shows there is a unequality in the ratio of data between Official
 
  Figure 6. Performance of Unofficial and Official Models by Model Size
 
+<img width="950" height="307" alt="image" src="https://github.com/user-attachments/assets/37e8c66f-7958-4eba-8e13-250324bf5e4e" />
+
+
+ Figure 7. CO2 per Parameters by Model Size
+
+Interestingly, medium-sized models demonstrate better CO2 efficiency per parameter than even small models. This suggests that there may be an optimal size range where models balance training overhead and parameter scaling more effectively, before large-scale inefficiencies dominate.
+
 
 <img width="1067" height="643" alt="image" src="https://github.com/user-attachments/assets/3ca249ba-8d10-41bc-8416-80366dc70b3c" />
 
- Figure 7. Qwen Model Performance (Unofficial vs Official)
+ Figure 8. Qwen Model Performance (Unofficial vs Official)
 
 For further accuracy, narrowing down to only one main provider (Qwen), we can still see the same trend where of unofficial models outperforming the official, which can then be concluded that fine-tuned models will provide more efficiency in terms of CO2 cost, Parameters, and Benchmark Scores.
 
 <img width="1292" height="369" alt="image" src="https://github.com/user-attachments/assets/469b05cb-023a-41f6-a975-6b65f325e4c7" />
 
- Figure 8.
+ Figure 9.
 
 After inspecting the Official Providers Models and comparing it to community fine-tuned models, the dataset also have Mixture of Experts column which we have not used.
-Unfortunately, some of the Parameters for MoE models contains the overall parameters, instead of the active parameters when in-used, which derives the numerical advantage of the MoE models as shown in Figure 8.
+Unfortunately, some of the Parameters for MoE models contains the overall parameters, instead of the active parameters when in-used, which derives the numerical advantage of the MoE models as shown in Figure 9.
 
 
 <img width="1130" height="640" alt="image" src="https://github.com/user-attachments/assets/03fad89a-baa0-47fe-a086-d74c22c56880" />
 
- Figure 9. MoE vs Dense CO2 Efficiency 
+ Figure 10. MoE vs Dense CO2 Efficiency 
 
 
-From Figure 9, in terms of CO2 Efficiency, the MoE models are on par with fine-tuned models
+From Figure 10, in terms of CO2 Efficiency, the MoE models are on par with fine-tuned models
 
 
 ## Conclusion
