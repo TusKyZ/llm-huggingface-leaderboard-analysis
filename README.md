@@ -1,4 +1,4 @@
-# Mini_Project: A Large Language Model Dataset Analysis from the HuggingFace Leaderboard 2024-2025
+# Mini_Project: An Overview of the Large Language Models Dataset from the HuggingFace Leaderboard 2024-2025
 
 ## Introduction
 
