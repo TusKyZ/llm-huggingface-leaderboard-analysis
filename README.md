@@ -130,40 +130,52 @@ Figure 2 help elaborates more clearly the trend of how benchmark scores drop whe
 
 <br>
 <br>
+
+<img width="950" height="307" alt="image" src="https://github.com/user-attachments/assets/37e8c66f-7958-4eba-8e13-250324bf5e4e" />
+
+
+ Figure 3. CO2 per Parameters by Model Size
+
+Interestingly, medium-sized models demonstrate better CO2 efficiency per parameter than even small models. This suggests that there may be an optimal size range where models balance training overhead and parameter scaling more effectively, before large-scale inefficiencies dominate.
+
 <br>
 
 Now, in the HuggingFace dataset, there is various fine-tuned models (Official Provider = "False"), and most of the fine-tuning results in better performance scores and better CO2 cost efficiency as follows.
 
 <img width="580" height="608" alt="image" src="https://github.com/user-attachments/assets/9d480170-db00-4a59-b5a1-cba004c35a74" />
 
+<br>
+<br>
+
 <img width="573" height="452" alt="image" src="https://github.com/user-attachments/assets/baf64c53-9bfb-4897-b314-c9d1af1cf58c" />
 
- Figure 3. CO2 Cost Performance Scatterplot with Trendline
+ Figure 4. CO2 Cost Performance Scatterplot with Trendline
 
-Figure 3 shows how the fine-tuned models from the community outperforms the Official Released models but is it because the community prefer to use only smaller, more efficient models?
+Figure 4 shows how the fine-tuned models from the community outperforms the Official Released models but is it because the community prefer to use only smaller, more efficient models?
 The author also took the ratio of each group in proportion to the "large" group model.
+
+<br>
+<br>
 
 <img width="649" height="541" alt="image" src="https://github.com/user-attachments/assets/da43d80b-2bd2-4afa-8f83-7bf640b72d4f" />
 
- Figure 4. Unofficial Models Count Ratio
+ Figure 5. Unofficial Models Count Ratio
+<br>
+<br>
 
 <img width="649" height="541" alt="image" src="https://github.com/user-attachments/assets/afa1a26d-1e66-4095-9d76-b95f811686fb" />
 
- Figure 5. Official Models Count Ratio
+ Figure 6. Official Models Count Ratio
 
-Figure 4 and 5 shows there is a unequality in the ratio of data between Official and Unofficial models, and the unofficial models are skewed toward the smaller, more efficient models. To make it more accurate, normalize by Parameters to make the comparison more accurate as will be seen in Figure 6.
+<br>
+
+Figure 5 and 6 shows there is a unequality in the ratio of data between Official and Unofficial models, and the unofficial models are skewed toward the smaller, more efficient models. To make it more accurate, normalize by Parameters to make the comparison more accurate as will be seen in Figure 7.
 
 <img width="497" height="486" alt="image" src="https://github.com/user-attachments/assets/a606c400-f15e-40f3-8b19-ccd3a89acda3" />
 
- Figure 6. Performance of Unofficial and Official Models by Model Size
+ Figure 7. Performance of Unofficial and Official Models by Model Size
 
-<img width="950" height="307" alt="image" src="https://github.com/user-attachments/assets/37e8c66f-7958-4eba-8e13-250324bf5e4e" />
-
-
- Figure 7. CO2 per Parameters by Model Size
-
-Interestingly, medium-sized models demonstrate better CO2 efficiency per parameter than even small models. This suggests that there may be an optimal size range where models balance training overhead and parameter scaling more effectively, before large-scale inefficiencies dominate.
-
+<br>
 
 <img width="1067" height="643" alt="image" src="https://github.com/user-attachments/assets/3ca249ba-8d10-41bc-8416-80366dc70b3c" />
 
@@ -171,13 +183,17 @@ Interestingly, medium-sized models demonstrate better CO2 efficiency per paramet
 
 For further accuracy, narrowing down to only one main provider (Qwen), we can still see the same trend where of unofficial models outperforming the official, which can then be concluded that fine-tuned models will provide more efficiency in terms of CO2 cost, Parameters, and Benchmark Scores.
 
-<img width="1292" height="369" alt="image" src="https://github.com/user-attachments/assets/469b05cb-023a-41f6-a975-6b65f325e4c7" />
+<br>
+
+<img width="1428" height="576" alt="image" src="https://github.com/user-attachments/assets/4a23c9e4-6318-4530-bd70-2ba2b69319b4" />
+
 
  Figure 9.
 
 After inspecting the Official Providers Models and comparing it to community fine-tuned models, the dataset also have Mixture of Experts column which we have not used.
 Unfortunately, some of the Parameters for MoE models contains the overall parameters, instead of the active parameters when in-used, which derives the numerical advantage of the MoE models as shown in Figure 9.
 
+<br>
 
 <img width="1130" height="640" alt="image" src="https://github.com/user-attachments/assets/03fad89a-baa0-47fe-a086-d74c22c56880" />
 
