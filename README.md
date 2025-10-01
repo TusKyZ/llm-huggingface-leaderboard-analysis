@@ -189,7 +189,8 @@ In conclusion.
 2. The fine-tuned models consistently outperforms pretrained official models in terms of CO2 efficiency, benchmark scores and parameters efficiency.
 In the future, if rules and regulations regarding Large Language Model power consumption became a problem, fine-tuning can reduce and optimize CO2 cost while maintaining or even increasing capabilities.
 
-3. MoE parameters in the datasets are inconsistent between active parameters and overall parameters. CO2 efficiency is comparable to fine-tuned models.
+3. MoE parameters in the datasets are inconsistent between active parameters and overall parameters, and CO2 efficiency is comparable to fine-tuned models. A conclusion can not made that fine-tuned MoE models are most efficient.
+Getting a more accurate MoE model parameters would be the next step for a more accurate conclusion.
 
 
 ## Additional Info
