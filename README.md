@@ -209,13 +209,15 @@ In conclusion.
 
 1. The increase in benchmark scores diminishes as the number of parameters went up.
 
-2. The fine-tuned models consistently outperforms pretrained official models in terms of CO2 efficiency, benchmark scores and parameters efficiency.
+2. Medium-sized models demonstrate better CO2 efficiency per parameter than small models. With precise fine-tuning, data suggests medium-sized models may be best in terms of CO2 efficiency.
+
+3. The fine-tuned models consistently outperforms pretrained official models in terms of CO2 efficiency, benchmark scores and parameters efficiency.
 In the future, if rules and regulations regarding Large Language Model power consumption became a problem, fine-tuning can reduce and optimize CO2 cost while maintaining or even increasing capabilities.
 
-3. MoE parameters in the datasets are inconsistent between active parameters and overall parameters, and CO2 efficiency is comparable to fine-tuned models. A conclusion can not made that fine-tuned MoE models are most efficient.
+4. MoE parameters in the datasets are inconsistent between active parameters and overall parameters, and CO2 efficiency is comparable to fine-tuned models. A conclusion can not made that fine-tuned MoE models are most efficient.
 Getting a more accurate MoE model parameters while inference/active would be the next step for a more accurate conclusion.
 
-4. Medium-sized models demonstrate better CO2 efficiency per parameter than small models. With precise fine-tuning, data suggests medium-sized models may be best in terms of CO2 efficiency.
+5. Instead of Average Scores, the dataset can be dig deeper on which models specialize in which fields such as Math, Physics, Logic, etc.
 
 
 ## Additional Info
