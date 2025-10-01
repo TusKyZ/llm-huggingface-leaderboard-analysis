@@ -219,8 +219,9 @@ Getting a more accurate MoE model parameters would be the next step for a more a
 
 
 ## Additional Info
-Hugging Face Leaderboard: Link https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/
-CO2 Cost Calculation (HuggingFace): Link https://huggingface.co/docs/leaderboards/open_llm_leaderboard/emissions
+Hugging Face Leaderboard: https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/
+
+CO2 Cost Calculation (HuggingFace): https://huggingface.co/docs/leaderboards/open_llm_leaderboard/emissions
 
 
 
