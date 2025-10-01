@@ -205,7 +205,7 @@ From Figure 10, in terms of CO2 Efficiency, the MoE models are on par with fine-
 
 ## Conclusion
 
-In conclusion.
+In conclusion,
 
 1. The increase in benchmark scores diminishes as the number of parameters went up.
 
